@@ -10,7 +10,8 @@ jobs:
         uses: dante-ev/latex-action@master
         with:
           root_file: lpantano-cv.tex
-      - name: my-cv
+      - name: Upload PDF
         uses: actions/upload-artifact@v2
         with:
+          name: lpantano-cv
           path: lpantano-cv.pdf
